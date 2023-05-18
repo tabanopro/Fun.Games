@@ -1,0 +1,393 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="6Y6Q#mSjl:Lb2Dc*T0ja">randomchange</variable>
+  </variables>
+  <block type="s4d_on_connected" id="2ZS.=hBPYSi5,p^nl1YC" x="-752" y="-497">
+    <statement name="STATEMENTS">
+      <block type="s4d_forever" id="Gpi%%5KaX@]p$oT0m,l1">
+        <statement name="STATEMENT">
+          <block type="variables_set" id="@8ui}z{K?u)I@}W7cR$.">
+            <field name="VAR" id="6Y6Q#mSjl:Lb2Dc*T0ja">randomchange</field>
+            <value name="VALUE">
+              <block type="math_random_int" id="!eTy{YG0yH%kg(i,P!V$">
+                <value name="FROM">
+                  <shadow type="math_number" id="8?jhK#qsi(qW_513}f7D">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+                <value name="TO">
+                  <shadow type="math_number" id="|9i?w|TOCh0#!D9}2UI3">
+                    <field name="NUM">5</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="|9h2do8BP=p+$1e!J6g.">
+                <mutation elseif="4"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="48/l0X59g?CWX1U1%dAj">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="K/}W:=lYi!}9[J/WHgN^">
+                        <field name="VAR" id="6Y6Q#mSjl:Lb2Dc*T0ja">randomchange</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="Eba}G)_j[X3i(psePWd]">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="s4d_set_bot_game" id="6Eo%wwCW@BZqIl2.h{7l">
+                    <field name="OIFD">online</field>
+                    <field name="TYPE">PLAYING</field>
+                    <value name="GAME">
+                      <block type="text" id="/7x${m0Y[_?johku=%`g">
+                        <field name="TEXT">Fun Games at Fun.Games</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF1">
+                  <block type="logic_compare" id="zJGq=t}^}%pqPz)9Dazk">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="%]b]w#!aI77`x/$=ffTy">
+                        <field name="VAR" id="6Y6Q#mSjl:Lb2Dc*T0ja">randomchange</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="#C,N:4F3sJf}[T:K-Uf6">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="s4d_set_bot_game" id="~J_ojpf{jp6B!W$/;)~y">
+                    <field name="OIFD">dnd</field>
+                    <field name="TYPE">COMPETING</field>
+                    <value name="GAME">
+                      <block type="text" id="(YPHj?p0gKnz_2LUv0f.">
+                        <field name="TEXT">WITH FUN.GAMES PLAYER</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF2">
+                  <block type="logic_compare" id="R);n_e,$#arB-~{kP8P0">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="%_oQ)V/bw*fZ^%SM:J`9">
+                        <field name="VAR" id="6Y6Q#mSjl:Lb2Dc*T0ja">randomchange</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="|M|LwW8Q@)fe]*dmr-,z">
+                        <field name="NUM">3</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO2">
+                  <block type="s4d_set_bot_game" id="vaIbb^R:wvr7EJ(;(T$[">
+                    <field name="OIFD">idle</field>
+                    <field name="TYPE">COMPETING</field>
+                    <value name="GAME">
+                      <block type="text" id="Qxy*xI!5@#nchnn8i7~,">
+                        <field name="TEXT">Select a game at Fun.Games</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF3">
+                  <block type="logic_compare" id="?o6h!cLGWqv.UcfamFh=">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="WO)j/gYtuj$@o[DedM-$">
+                        <field name="VAR" id="6Y6Q#mSjl:Lb2Dc*T0ja">randomchange</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="2At57Ln#[*6d8hB)xl,J">
+                        <field name="NUM">4</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO3">
+                  <block type="s4d_set_bot_game" id="pl#as#V-EQbOA}gqQCVG">
+                    <field name="OIFD">online</field>
+                    <field name="TYPE">LISTENING</field>
+                    <value name="GAME">
+                      <block type="text" id="ig_{mRRN7gnhMDc2]P[b">
+                        <field name="TEXT">To Justice on Soundcloud</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF4">
+                  <block type="logic_compare" id="0Z+Tyn(*Xg9u$$%g2+49">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="Sa[1Y$`bJj*X}K4S`73A">
+                        <field name="VAR" id="6Y6Q#mSjl:Lb2Dc*T0ja">randomchange</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id=",;SYB_f#)GBf9Y=i-=wd">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO4">
+                  <block type="s4d_set_bot_game" id="uB;$nF]l(Z#dg8[}LKQm">
+                    <field name="OIFD">online</field>
+                    <field name="TYPE">COMPETING</field>
+                    <value name="GAME">
+                      <block type="text" id="I_;chVt=fOADzdM$vEVm">
+                        <field name="TEXT"> With Time</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_login" id="L)$.w:^Wagj@GvgHf7/=" x="335" y="-260">
+    <value name="TOKEN">
+      <shadow type="text" id="LF/mH=|S0k=Ft*tcspL-">
+        <field name="TEXT">Your bot token</field>
+      </shadow>
+      <block type="frost_env" id="zOhIh,KY%+VJi|^~lzSG">
+        <value name="VALUE">
+          <shadow type="text" id="CM.0~D?}f+2C*6rBoMcR">
+            <field name="TEXT">token</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="on_slash" id="ZVFFr6^1=oeSoM}Z@1)J" x="783" y="-57">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="+cl7MYLHHiu*=i/b?._!">
+        <value name="IF0">
+          <block type="logic_compare" id="RHY5kM2q2OEgjg],ju~?">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="interaction_name" id="qDF3]i:))H$iLAEDTErb"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="*03[AmK8oO6@v9IJm4rF">
+                <field name="TEXT">tomato</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="slash_reply" id="$hEfG_(af|d-:r.%_3PA">
+            <value name="CONTENT">
+              <block type="gsa_simple_embed" id="#ETWRtu$mSP0R=G7!TrE">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" color="true" title="true" description="true"></mutation>
+                <value name="COLOR">
+                  <block type="colour_picker" id="kv*%YoM$OT]mq]:PpV:R">
+                    <field name="COLOUR">#660000</field>
+                  </block>
+                </value>
+                <value name="TITLE">
+                  <block type="text" id="|_K.#e?NUz*4F397D/,o">
+                    <field name="TEXT">IS IT A FRUIT?</field>
+                  </block>
+                </value>
+                <value name="DESCRIPTION">
+                  <block type="text" id="?hA-WK@Yf|3D|kZ7i$aK">
+                    <field name="TEXT">Is the tomato a fruit answer yes/no..</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="BOOLEAN">
+              <block type="logic_boolean" id="Lk]U$_DmHEC2@jg[=u;p">
+                <field name="BOOL">TRUE</field>
+                <comment pinned="false" h="128" w="265">true - only the person who t=did the comamnd can see it
+
+false - everyone can see it
+                
+                </comment>
+              </block>
+            </value>
+            <next>
+              <block type="s4d_send_button" id="7^(/SMYArq`y1)rH:3AA">
+                <value name="CHANNEL">
+                  <block type="interaction_channel" id="v{(m_zE[6=jGj#s*}hv/"></block>
+                </value>
+                <value name="CONTENT">
+                  <block type="text" id="{0N]bffN+ky:z3/e.Uhv">
+                    <field name="TEXT">Here are the available options:</field>
+                  </block>
+                </value>
+                <value name="BUTTON">
+                  <block type="s4d_button_row" id="8Myh|C3~8XpPj#~Iasno">
+                    <statement name="BUTTONS">
+                      <block type="s4d_message_row_block" id="Ex)h43.tgk0zJ]dtBGp4">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" style="true" label="true" emoji="true" custom_id="true"></mutation>
+                        <value name="STYLE">
+                          <block type="s4d_button_style" id="KoN]UahMzJY7JmSkT*ul">
+                            <field name="COLOR">SUCCESS</field>
+                          </block>
+                        </value>
+                        <value name="LABEL">
+                          <block type="text" id="wFsi6*z@o/,GdR+?7$SL">
+                            <field name="TEXT">Yes</field>
+                          </block>
+                        </value>
+                        <value name="EMOJI">
+                          <block type="text" id="Qp/LnIepxb2WlBXwurfY">
+                            <field name="TEXT">✅</field>
+                          </block>
+                        </value>
+                        <value name="CUSTOM_ID">
+                          <block type="text" id="nVAY5_2no[o9sWz;+rNQ">
+                            <field name="TEXT">yes.tomato.command</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="s4d_message_row_block" id="3}7`Hsgb!]B!)}|AJzrf">
+                            <mutation xmlns="http://www.w3.org/1999/xhtml" style="true" label="true" emoji="true" custom_id="true"></mutation>
+                            <value name="STYLE">
+                              <block type="s4d_button_style" id="2m;qB|;vZ,.4:8$=GAOx">
+                                <field name="COLOR">DANGER</field>
+                              </block>
+                            </value>
+                            <value name="LABEL">
+                              <block type="text" id="$!5a7M,:v%u!(6-T7nc_">
+                                <field name="TEXT">No</field>
+                              </block>
+                            </value>
+                            <value name="EMOJI">
+                              <block type="text" id="~)6*:!2PM9QGC@=zvRLp">
+                                <field name="TEXT">❌</field>
+                              </block>
+                            </value>
+                            <value name="CUSTOM_ID">
+                              <block type="text" id="QCST{,@+IL5.R*3$3zv-">
+                                <field name="TEXT">no.tomato.command</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </value>
+                <statement name="STATEMENTS">
+                  <block type="s4d_on_click" id="%5]fxvk{h1vnvo*@|N9S">
+                    <value name="MEMBER">
+                      <block type="interaction_author" id="a]KbYC:5!0[TvvKsNIEa"></block>
+                    </value>
+                    <statement name="STATEMENTS">
+                      <block type="controls_if" id="LbN$PR%)/;cXgaWY-[nQ">
+                        <mutation else="1"></mutation>
+                        <value name="IF0">
+                          <block type="logic_compare" id="HP8p3o4a6B#_wtQLT05G">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="s4d_button_click_id" id="cumz3II0jK%srXsIX[rQ"></block>
+                            </value>
+                            <value name="B">
+                              <block type="text" id="4!a?Yk.0wbC6_!Kcsogr">
+                                <field name="TEXT">yes.tomato.command</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="s4d_send_member" id="4Xj97E~)xA*tVv(_+ucS">
+                            <value name="CONTENT">
+                              <block type="gsa_simple_embed" id="?}dj3XCqtaUsn@B$77i2">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" color="true" title="true" description="true"></mutation>
+                                <value name="COLOR">
+                                  <block type="colour_picker" id="Sy|N9k{I5$1[{]|8Zo1_">
+                                    <field name="COLOUR">#33ff33</field>
+                                  </block>
+                                </value>
+                                <value name="TITLE">
+                                  <block type="text" id="5f+rxiUK0d08TF?5mM+1">
+                                    <field name="TEXT">YOU GOT IT!</field>
+                                  </block>
+                                </value>
+                                <value name="DESCRIPTION">
+                                  <block type="text" id="HFdhP;H](=Hq5-tgd#][">
+                                    <field name="TEXT">YES THE TOMATO IS A FRUIT BABY!</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="MEMBER">
+                              <block type="interaction_author" id="M(iN)ARMZvA2`gK`$Jr}"></block>
+                            </value>
+                          </block>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="s4d_send_member" id="=u;2y+we23G$w+CU39TO">
+                            <value name="CONTENT">
+                              <block type="gsa_simple_embed" id="0a3lksTeHkx/`NC9zlK(">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" color="true" title="true" description="true"></mutation>
+                                <value name="COLOR">
+                                  <block type="colour_picker" id="Hs4}PpLPDJ_P|`w(+/oc">
+                                    <field name="COLOUR">#ff0000</field>
+                                  </block>
+                                </value>
+                                <value name="TITLE">
+                                  <block type="text" id="3vY,;AIG_3k5-/$MZRyG">
+                                    <field name="TEXT">no...</field>
+                                  </block>
+                                </value>
+                                <value name="DESCRIPTION">
+                                  <block type="text" id="Q#,BNY;.20B|QYV_8FO)">
+                                    <field name="TEXT">no... it isn't a fruit... :(</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="MEMBER">
+                              <block type="interaction_author" id="bS*iG#^ykL^uYvS(K|gN"></block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="frost_slash_register" id="B!OZ`L!n6wK1J|?tQCe1" x="-294" y="297">
+    <statement name="OPTIONS">
+      <block type="frost_slash_command" id="2/*v/YZshjQxLBPQ-QqM">
+        <value name="NAME">
+          <shadow type="text" id="Huli$:q!l/q/MMS]*[iC">
+            <field name="TEXT">tomato</field>
+          </shadow>
+        </value>
+        <value name="DESC">
+          <shadow type="text" id="tkD^N%pwskHG-)u,S^i%">
+            <field name="TEXT">See if a tomato is a fruit or not</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
